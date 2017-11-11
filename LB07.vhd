@@ -24,13 +24,7 @@ Architecture structural of LB07 is
 	Signal	SamClk, Clear, PulseO : std_logic;
 
 Begin
---***********************************************************************************
--- You must enter the last five digits from the student number of one group member.
--- example: 
---	
---		work.AudioInterface generic map ( SID => xxxxx ) - where xxxxx are the last 5 digits.
---
---***********************************************************************************
+
 ASSM: Entity work.AudioInterface	generic map ( SID =>  56789)
 			port map (
 			Clock_50 => CLOCK_50, AudMclk => AUD_XCK,	-- period is 80 ns ( 12.5 Mhz )
